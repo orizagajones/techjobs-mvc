@@ -111,7 +111,7 @@ public class JobData {
                     jobs.add(row);
 
                     // Finding one field in a job that matches is sufficient
-                    break;
+                    //break;
                 }
             }
         }

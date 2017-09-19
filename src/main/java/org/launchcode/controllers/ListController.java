@@ -18,7 +18,7 @@ public class ListController {
 
     static HashMap<String, String> columnChoices = new HashMap<>();
 
-    public ListController () {
+    public ListController () {   //this is the constructor
         columnChoices.put("core competency", "Skill");
         columnChoices.put("employer", "Employer");
         columnChoices.put("location", "Location");
@@ -27,7 +27,7 @@ public class ListController {
     }
 
     @RequestMapping(value = "")
-    public String list(Model model) {
+    public String list(Model model) { //aka the index handler method
 
         model.addAttribute("columns", columnChoices);
 
